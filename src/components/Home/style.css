@@ -1,0 +1,33 @@
+.explore-box div{
+    width: 24vw;
+    height: 24vw;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: outline ease-in-out 350ms;
+}
+.explore-box div:hover{
+    outline: 60px solid rgba(255, 255, 255, 0.144);
+}
+.explore-box div h5{
+    font-family: 'Bellefair', serif;
+    color: #0B0D17;
+    text-align: center;
+    margin: auto 0;
+    font-size: 20px;
+    line-height: 36.67px;
+}
+@media(max-width: 767px){
+    .explore-box div{
+        width: 30vw;
+        height: 30vw;
+    }    
+}
+@media(max-width:639px){
+    .explore-box div{
+        width: 35vw;
+        height: 35vw;
+    }
+}

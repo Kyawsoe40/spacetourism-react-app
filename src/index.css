@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+.Barlow-condensed-font{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.Bellefair-font{
+    font-family: 'Bellefair', serif;
+}
+.custom-lightblue{
+    color: #d0d6f9;
+}
+.def-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+}
+.home-bg{
+    background-image: url(./imgs/background-home-desktop.jpg);
+    
+}
+.destination-bg{
+    background-image: url(./imgs/background-destination-desktop.jpg)
+}
+.crew-bg{
+    background-image: url(./imgs/background-crew-desktop.jpg)
+}
+.technology-bg{
+    background-image: url(./imgs/background-technology-desktop.jpg)
+}
+@media(max-width: 767px){
+    .home-bg{
+        background-image: url(./imgs/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+    .destination-bg{
+        background-image: url(./imgs/background-destination-tablet.jpg)
+    }
+    .crew-bg{
+        background-image: url(./imgs/background-crew-tablet.jpg)
+    }
+    .technology-bg{
+        background-image: url(./imgs/background-technology-tablet.jpg)
+    }
+}
+@media(max-width:639px){
+    .home-bg{
+        background-image: url(./imgs/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+    }
+    .destination-bg{
+        background-image: url(./imgs/background-destination-mobile.jpg)
+    }
+    .crew-bg{
+        background-image: url(./imgs/background-crew-mobile.jpg)
+    }
+    .technology-bg{
+        background-image: url(./imgs/background-technology-mobile.jpg)
+    }
 }
